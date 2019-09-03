@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{15867D38-099A-4442-A15F-7CCCDB2EB2E5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Order</RootNamespace>
+    <AssemblyName>Order</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="DataPage.aspx" />
+    <Content Include="DownApp.aspx" />
+    <Content Include="img\11.JPG" />
+    <Content Include="img\111.png" />
+    <Content Include="img\1_1.jpg" />
+    <Content Include="img\1_10.jpg" />
+    <Content Include="img\1_11.jpg" />
+    <Content Include="img\1_12.jpg" />
+    <Content Include="img\1_13.jpg" />
+    <Content Include="img\1_14.jpg" />
+    <Content Include="img\1_15.jpg" />
+    <Content Include="img\1_2.jpg" />
+    <Content Include="img\1_3.jpg" />
+    <Content Include="img\1_4.jpg" />
+    <Content Include="img\1_5.jpg" />
+    <Content Include="img\1_6.jpg" />
+    <Content Include="img\1_7.jpg" />
+    <Content Include="img\1_8.jpg" />
+    <Content Include="img\1_9.jpg" />
+    <Content Include="img\222.jpg" />
+    <Content Include="img\2_1.jpg" />
+    <Content Include="img\2_2.jpg" />
+    <Content Include="img\2_3.jpg" />
+    <Content Include="img\2_4.jpg" />
+    <Content Include="img\2_5.jpg" />
+    <Content Include="img\2_6.jpg" />
+    <Content Include="img\2_7.png" />
+    <Content Include="img\3.jpg" />
+    <Content Include="img\333.jpg" />
+    <Content Include="img\4.jpg" />
+    <Content Include="img\444.png" />
+    <Content Include="img\5.jpg" />
+    <Content Include="img\6.jpg" />
+    <Content Include="img\address.png" />
+    <Content Include="img\backgimag.jpg" />
+    <Content Include="img\DownApp.jpg" />
+    <Content Include="img\foot.png" />
+    <Content Include="img\ico21.gif" />
+    <Content Include="img\ico22.gif" />
+    <Content Include="img\ico22_2.gif" />
+    <Content Include="img\ico55.gif" />
+    <Content Include="img\ico56.gif" />
+    <Content Include="img\ico58.gif" />
+    <Content Include="img\input.png" />
+    <Content Include="img\logo-big.jpg" />
+    <Content Include="img\logo1.JPG" />
+    <Content Include="img\logos.jpg" />
+    <Content Include="img\logos.png" />
+    <Content Include="img\QQlogin.png" />
+    <Content Include="img\qweqw.JPG" />
+    <Content Include="img\top.png" />
+    <Content Include="img\捕获.JPG" />
+    <Content Include="img\无标题.jpg" />
+    <Content Include="meta.aspx" />
+    <Content Include="Addup.aspx" />
+    <Content Include="Myorder.aspx" />
+    <Content Include="productInfo.aspx" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\plug_24_mytable_page.js" />
+    <Content Include="Styles\css.css" />
+    <Content Include="Styles\login_register.css" />
+    <Content Include="Styles\plug_24_mytable_page.css" />
+    <Content Include="Server.aspx" />
+    <Content Include="UserRegister.aspx" />
+    <Content Include="Main.aspx" />
+    <Content Include="Styles\Login.css" />
+    <Content Include="Address.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataPage.aspx.cs">
+      <DependentUpon>DataPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataPage.aspx.designer.cs">
+      <DependentUpon>DataPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DownApp.aspx.cs">
+      <DependentUpon>DownApp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DownApp.aspx.designer.cs">
+      <DependentUpon>DownApp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="meta.aspx.cs">
+      <DependentUpon>meta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="meta.aspx.designer.cs">
+      <DependentUpon>meta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Addup.aspx.cs">
+      <DependentUpon>Addup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Addup.aspx.designer.cs">
+      <DependentUpon>Addup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Myorder.aspx.cs">
+      <DependentUpon>Myorder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Myorder.aspx.designer.cs">
+      <DependentUpon>Myorder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="productInfo.aspx.cs">
+      <DependentUpon>productInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="productInfo.aspx.designer.cs">
+      <DependentUpon>productInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Server.aspx.cs">
+      <DependentUpon>Server.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Server.aspx.designer.cs">
+      <DependentUpon>Server.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegister.aspx.cs">
+      <DependentUpon>UserRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRegister.aspx.designer.cs">
+      <DependentUpon>UserRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Address.aspx.cs">
+      <DependentUpon>Address.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Address.aspx.designer.cs">
+      <DependentUpon>Address.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{0CCCCD8E-4C69-423C-8E4D-64A0CD925AB0}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBHelp\DBHelp.csproj">
+      <Project>{DB6897C3-25EA-425A-8AC9-B16DEC3B0071}</Project>
+      <Name>DBHelp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{6A0AB1DC-1824-4551-853B-5772A2FBE8DB}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2715</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

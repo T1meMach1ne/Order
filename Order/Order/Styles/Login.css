@@ -1,0 +1,38 @@
+﻿body {
+}
+.div1
+{
+    margin:200px 300px auto 300px;   
+}
+.lblAddress
+{
+    height:50px;
+    font-size:20px; 
+    text-align:center;
+}
+.txtAddress
+{ 
+    width: 80%;
+    height: 39px;
+    border: 1px solid #8E96A1;
+    color: #333;
+    font-size: 20px;
+    line-height: 40px;     
+ }
+ 
+ .btnSelect
+ {
+      background-color:#FE4D3D;
+      height:40px;
+      width:60px;
+      font-size:18px;
+      color:White;
+ }
+ .mess
+ {
+      font:Red; 
+ }
+
+ 
+ 
+ 
