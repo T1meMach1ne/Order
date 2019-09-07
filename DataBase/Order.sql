@@ -1,11 +1,11 @@
 use master
 go
-if exists(select * from sysdatabases where name='Order')
-	drop database Order
+if exists(select * from sysdatabases where name='Orders')
+	drop database Orders
 go
-create database Order
+create database Orders
 go
-use Order
+use Orders
 go
 
 
@@ -28,7 +28,7 @@ create table usersongcaninfo --用户送餐信息表
 )
 insert into usersongcaninfo values('伟大的吃货','东八-419','1000',1)
 
-select userinfo.uiid,usersongcaninfo.usname,userinfo.uipwd,usersongcaninfo.usdizhi,ustel from userinfo  left join usersongcaninfo on userinfo.id=usersongcaninfo.usid 
+--select userinfo.uiid,usersongcaninfo.usname,userinfo.uipwd,usersongcaninfo.usdizhi,ustel from userinfo  left join usersongcaninfo on userinfo.id=usersongcaninfo.usid 
 create table AddressInfo
 (
     id int identity(1,1),
@@ -50,7 +50,7 @@ create table StoreInfo --店铺表
 	saleNum int, --月销
 	evaluation int --评价(好评+1)
 )
-select * from StoreInfo
+--select * from StoreInfo
 --添加店铺信息
 insert into StoreInfo values ('小干锅','img/1_1.jpg','汤饭世家','15897588684','宜昌西陵区体育场路美食城小干锅',31,500,64)
 insert into StoreInfo values ('兄弟饭馆','img/1_2.jpg','美味盖饭','13897587684','宜昌西陵区体育场路美食城兄弟饭馆',32,1000,200)
@@ -168,11 +168,11 @@ create table OrderInfo --订单表
 )
 
 
-select * from userinfo --用户表
-select * from usersongcaninfo --用户送餐信息表
-select * from StoreInfo order by saleNum desc --店铺表
-select * from StoreInfo where storeName like  '%星%' --店铺表
-select * from TypeInfo --菜品类型表
-select * from productInfo --菜品表
-select * from OrderInfo --订单表
-select OrderInfo.orderContent,orderTime,acceptTime,expressTel,StoreInfo.storeName,OrderInfo.countPrice  from OrderInfo left join StoreInfo on OrderInfo.storeID=StoreInfo.id where orderUserId='admin'
+--select * from userinfo --用户表
+--select * from usersongcaninfo --用户送餐信息表
+--select * from StoreInfo order by saleNum desc --店铺表
+--select * from StoreInfo where storeName like  '%星%' --店铺表
+--select * from TypeInfo --菜品类型表
+--select * from productInfo --菜品表
+--select * from OrderInfo --订单表
+--select OrderInfo.orderContent,orderTime,acceptTime,expressTel,StoreInfo.storeName,OrderInfo.countPrice  from OrderInfo left join StoreInfo on OrderInfo.storeID=StoreInfo.id where orderUserId='admin'

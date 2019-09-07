@@ -9,7 +9,7 @@ namespace DBHelp
 {
     public class DBHelper
     {
-        string sqlStr = "Data Source=.;Initial Catalog=kaneki;Integrated Security=True";
+        string sqlStr = "Data Source=.;Initial Catalog=Orders;Integrated Security=True";
 
         public DataTable SelectData(string sql)
         {
