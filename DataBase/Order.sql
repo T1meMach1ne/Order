@@ -9,7 +9,7 @@ use Orders
 go
 
 
-create table userinfo --ÓÃ»§±í
+create table UserInfo --ÓÃ»§±í
 (
 	id int primary key identity(1,1),
 	uiid varchar(50),--ÕË»§
@@ -17,8 +17,8 @@ create table userinfo --ÓÃ»§±í
 )
 --select userinfo.uiid,uipwd,usersongcaninfo.usname,usdizhi,ustel from userinfo left join usersongcaninfo on userinfo.id=usersongcaninfo.usid where uiid='admin'
 
-insert into userinfo values('admin','admin')
-create table usersongcaninfo --ÓÃ»§ËÍ²ÍĞÅÏ¢±í
+insert into UserInfo values('admin','admin')
+create table UserSongCanInfo --ÓÃ»§ËÍ²ÍĞÅÏ¢±í
 (
 	id int primary key identity(1,1),
 	usname varchar(50), --ĞÕÃû
@@ -26,7 +26,7 @@ create table usersongcaninfo --ÓÃ»§ËÍ²ÍĞÅÏ¢±í
 	ustel varchar(50), --µç»°
 	usid int,--Íâ¼ü£¨¹ØÁªÓÃ»§±íÖ÷¼ü£©
 )
-insert into usersongcaninfo values('Î°´óµÄ³Ô»õ','¶«°Ë-419','1000',1)
+insert into UserSongCanInfo values('CCCC','¶«°Ë-419','1000',1)
 
 --select userinfo.uiid,usersongcaninfo.usname,userinfo.uipwd,usersongcaninfo.usdizhi,ustel from userinfo  left join usersongcaninfo on userinfo.id=usersongcaninfo.usid 
 create table AddressInfo
@@ -82,7 +82,7 @@ insert into TypeInfo values ('¸Ç½½·¹')
 insert into TypeInfo values ('Â±Èâ·¹')
 insert into TypeInfo values ('¿¾Èâ·¹')
 
-create table productInfo --²ËÆ·±í
+create table ProductInfo --²ËÆ·±í
 (
 	productID int primary key identity(1,1),
 	productName varchar(50),--²ËÃû
@@ -95,63 +95,63 @@ create table productInfo --²ËÆ·±í
 --Ìí¼Ó²ËÆ·ĞÅÏ¢
 	--Ğ¡¸É¹ø²ËÆ·
 		--ÌØÉ«
-		insert into productInfo values ('Ïº¾í¹ø','img/2_1.jpg','8','1','1','1')
-		insert into productInfo values ('ÓãÍèÌÀ·¹','img/2_2.jpg','7','2','1','1')
+		insert into ProductInfo values ('Ïº¾í¹ø','img/2_1.jpg','8','1','1','1')
+		insert into ProductInfo values ('ÓãÍèÌÀ·¹','img/2_2.jpg','7','2','1','1')
 		--Ğ¡¸É¹ø·¹
-		insert into productInfo values ('ËØ²Ë¹ø','','7','1','1','2')
-		insert into productInfo values ('ÖíÑª¹ø','','8','1','1','2')
-		insert into productInfo values ('Ğ·ÅÅ¹ø','','8','1','1','2')
-		insert into productInfo values ('Å£Èâ¹ø','','9','1','1','2')
-		insert into productInfo values ('ÅºÆ¬¹ø','','8','1','1','2')
+		insert into ProductInfo values ('ËØ²Ë¹ø','','7','1','1','2')
+		insert into ProductInfo values ('ÖíÑª¹ø','','8','1','1','2')
+		insert into ProductInfo values ('Ğ·ÅÅ¹ø','','8','1','1','2')
+		insert into ProductInfo values ('Å£Èâ¹ø','','9','1','1','2')
+		insert into ProductInfo values ('ÅºÆ¬¹ø','','8','1','1','2')
 		--ÌÀ·¹
-		insert into productInfo values ('¶¹¹÷ÌÀ·¹','','6','2','1','2')
-		insert into productInfo values ('º£´øÌÀ·¹','','6','2','1','2')
-		insert into productInfo values ('ÍÁ¶¹ÌÀ·¹','','6','2','1','2')
-		insert into productInfo values ('Ç§Ò¶¶¹¸¯ÌÀ·¹','','7','2','1','2')
-		insert into productInfo values ('Çà²ËÌÀ·¹','','6','2','1','2')
+		insert into ProductInfo values ('¶¹¹÷ÌÀ·¹','','6','2','1','2')
+		insert into ProductInfo values ('º£´øÌÀ·¹','','6','2','1','2')
+		insert into ProductInfo values ('ÍÁ¶¹ÌÀ·¹','','6','2','1','2')
+		insert into ProductInfo values ('Ç§Ò¶¶¹¸¯ÌÀ·¹','','7','2','1','2')
+		insert into ProductInfo values ('Çà²ËÌÀ·¹','','6','2','1','2')
 
 	--ĞÖµÜ·¹¹İ²ËÆ·
 		--ÌØÉ«
-		insert into productInfo values ('ËáÀ±·Ê³¦','img/2_3.jpg','11','3','2','1')
-		insert into productInfo values ('¶ş±ÆÊÖËºÑ¼','img/2_4.jpg','14','3','2','1')
+		insert into ProductInfo values ('ËáÀ±·Ê³¦','img/2_3.jpg','11','3','2','1')
+		insert into ProductInfo values ('¶ş±ÆÊÖËºÑ¼','img/2_4.jpg','14','3','2','1')
 		--³´²Ë
-		insert into productInfo values ('ËÄ¼¾¶¹','','10','3','2','2')
-		insert into productInfo values ('Îä²ıÓã','','12','3','2','2')
-		insert into productInfo values ('Å©¼Ò³´À°Èâ','','13','3','2','2')
-		insert into productInfo values ('ÓãÏãÈâË¿','','12','3','2','2')
-		insert into productInfo values ('ÓÍÁÜÇÑ×Ó','','10','3','2','2')
-		insert into productInfo values ('ËÄ¼¾¶¹','','10','3','2','2')
-		insert into productInfo values ('Îä²ıÓã','','12','3','2','2')
-		insert into productInfo values ('Å©¼Ò³´À°Èâ','','13','3','2','2')
-		insert into productInfo values ('ÓãÏãÈâË¿','','12','3','2','2')
-		insert into productInfo values ('ÓÍÁÜÇÑ×Ó','','10','3','2','2')
+		insert into ProductInfo values ('ËÄ¼¾¶¹','','10','3','2','2')
+		insert into ProductInfo values ('Îä²ıÓã','','12','3','2','2')
+		insert into ProductInfo values ('Å©¼Ò³´À°Èâ','','13','3','2','2')
+		insert into ProductInfo values ('ÓãÏãÈâË¿','','12','3','2','2')
+		insert into ProductInfo values ('ÓÍÁÜÇÑ×Ó','','10','3','2','2')
+		insert into ProductInfo values ('ËÄ¼¾¶¹','','10','3','2','2')
+		insert into ProductInfo values ('Îä²ıÓã','','12','3','2','2')
+		insert into ProductInfo values ('Å©¼Ò³´À°Èâ','','13','3','2','2')
+		insert into ProductInfo values ('ÓãÏãÈâË¿','','12','3','2','2')
+		insert into ProductInfo values ('ÓÍÁÜÇÑ×Ó','','10','3','2','2')
 		--¸Ç½½·¹
-		insert into productInfo values ('Çà½·³´µ°¸Ç·¹','','9','4','2','2')
-		insert into productInfo values ('ÈâÄ©ÇÑ×Ó¸Ç·¹','','9','4','2','2')
-		insert into productInfo values ('ËáÀ±ÍÁ¶¹Ë¿¸Ç·¹','','8','4','2','2')
-		insert into productInfo values ('»Ø¹øÈâ¸Ç·¹','','9','4','2','2')
-		insert into productInfo values ('»Æ¹Ï³´»ğÍÈ¸Ç·¹','','8','4','2','2')
-		insert into productInfo values ('Çà½·³´µ°¸Ç·¹','','9','4','2','2')
-		insert into productInfo values ('ÈâÄ©ÇÑ×Ó¸Ç·¹','','9','4','2','2')
-		insert into productInfo values ('ËáÀ±ÍÁ¶¹Ë¿¸Ç·¹','','8','4','2','2')
-		insert into productInfo values ('»Ø¹øÈâ¸Ç·¹','','9','4','2','2')
-		insert into productInfo values ('»Æ¹Ï³´»ğÍÈ¸Ç·¹','','8','4','2','2')
+		insert into ProductInfo values ('Çà½·³´µ°¸Ç·¹','','9','4','2','2')
+		insert into ProductInfo values ('ÈâÄ©ÇÑ×Ó¸Ç·¹','','9','4','2','2')
+		insert into ProductInfo values ('ËáÀ±ÍÁ¶¹Ë¿¸Ç·¹','','8','4','2','2')
+		insert into ProductInfo values ('»Ø¹øÈâ¸Ç·¹','','9','4','2','2')
+		insert into ProductInfo values ('»Æ¹Ï³´»ğÍÈ¸Ç·¹','','8','4','2','2')
+		insert into ProductInfo values ('Çà½·³´µ°¸Ç·¹','','9','4','2','2')
+		insert into ProductInfo values ('ÈâÄ©ÇÑ×Ó¸Ç·¹','','9','4','2','2')
+		insert into ProductInfo values ('ËáÀ±ÍÁ¶¹Ë¿¸Ç·¹','','8','4','2','2')
+		insert into ProductInfo values ('»Ø¹øÈâ¸Ç·¹','','9','4','2','2')
+		insert into ProductInfo values ('»Æ¹Ï³´»ğÍÈ¸Ç·¹','','8','4','2','2')
 	--½ãÃÃÂ±Èâ·¹²ËÆ·
 		--ÌØÉ«
-		insert into productInfo values ('Â±Èâ·¹','img/2_5.jpg','12','5','3','1')
-		insert into productInfo values ('Ñ¼ÍÈ·¹','img/2_6.jpg','13','5','3','1')
+		insert into ProductInfo values ('Â±Èâ·¹','img/2_5.jpg','12','5','3','1')
+		insert into ProductInfo values ('Ñ¼ÍÈ·¹','img/2_6.jpg','13','5','3','1')
 		--Â±Èâ·¹
-		insert into productInfo values ('´óÅÅ·¹','','13','5','3','2')
-		insert into productInfo values ('Å£ëî·¹','','13','5','3','2')
-		insert into productInfo values ('ÖíÊÖ·¹','','13','5','3','2')
-		insert into productInfo values ('»ğÍÈ·¹','','10','5','3','2')
-		insert into productInfo values ('¼¦ÍÈ·¹','','11','5','3','2')
+		insert into ProductInfo values ('´óÅÅ·¹','','13','5','3','2')
+		insert into ProductInfo values ('Å£ëî·¹','','13','5','3','2')
+		insert into ProductInfo values ('ÖíÊÖ·¹','','13','5','3','2')
+		insert into ProductInfo values ('»ğÍÈ·¹','','10','5','3','2')
+		insert into ProductInfo values ('¼¦ÍÈ·¹','','11','5','3','2')
 		--¿¾Èâ·¹
-		insert into productInfo values ('ÉÕ¼¦¿éÃ×·¹','','10','6','3','2')
-		insert into productInfo values ('ôÙôÎÓã¼Ó¿¾Èâ·¹','','10','6','3','2')
-		insert into productInfo values ('Á¹°èÈâÆ¤¼Ó¿¾Èâ·¹','','10','6','3','2')
-		insert into productInfo values ('Á¹°èË³·ç¼Ó¿¾Èâ·¹','','10','6','3','2')
-		insert into productInfo values ('Á¹°èÀï¼¹Èâ¼Ó¿¾Èâ·¹','','10','6','3','2')
+		insert into ProductInfo values ('ÉÕ¼¦¿éÃ×·¹','','10','6','3','2')
+		insert into ProductInfo values ('ôÙôÎÓã¼Ó¿¾Èâ·¹','','10','6','3','2')
+		insert into ProductInfo values ('Á¹°èÈâÆ¤¼Ó¿¾Èâ·¹','','10','6','3','2')
+		insert into ProductInfo values ('Á¹°èË³·ç¼Ó¿¾Èâ·¹','','10','6','3','2')
+		insert into ProductInfo values ('Á¹°èÀï¼¹Èâ¼Ó¿¾Èâ·¹','','10','6','3','2')
 		
 create table OrderInfo --¶©µ¥±í
 (
@@ -173,6 +173,6 @@ create table OrderInfo --¶©µ¥±í
 --select * from StoreInfo order by saleNum desc --µêÆÌ±í
 --select * from StoreInfo where storeName like  '%ĞÇ%' --µêÆÌ±í
 --select * from TypeInfo --²ËÆ·ÀàĞÍ±í
---select * from productInfo --²ËÆ·±í
+--select * from ProductInfo --²ËÆ·±í
 --select * from OrderInfo --¶©µ¥±í
 --select OrderInfo.orderContent,orderTime,acceptTime,expressTel,StoreInfo.storeName,OrderInfo.countPrice  from OrderInfo left join StoreInfo on OrderInfo.storeID=StoreInfo.id where orderUserId='admin'
