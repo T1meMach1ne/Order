@@ -1,11 +1,11 @@
 use master
 go
-if exists(select * from sysdatabases where name='kaneki')
-	drop database kaneki
+if exists(select * from sysdatabases where name='Order')
+	drop database Order
 go
-create database kaneki
+create database Order
 go
-use kaneki
+use Order
 go
 
 
